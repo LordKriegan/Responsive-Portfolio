@@ -49,6 +49,9 @@ footer {
 	padding: 15px 0 15px 0;
 	width: 960px;
 	margin: 0 auto;
+	border-style: groove;
+	border-width: 3px;
+	border-color: #cccccc;
 }
 
 #mainWrapper {
@@ -82,7 +85,7 @@ footer {
 }
 
 #container {
-	padding-top: 50px;
+	padding: 50px 0 50px 0;
 	clear: both;
 	overflow: auto;
 	width: 960px;
@@ -164,7 +167,12 @@ footer {
 }
 
 .pgHeader {
+	padding-top: 10px;
 	color: #4aaaa5;
+}
+
+.sidebarHeader {
+	padding-top: 10px;
 }
 
 .txtLink:hover {
