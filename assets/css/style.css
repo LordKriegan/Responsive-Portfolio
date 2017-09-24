@@ -215,12 +215,12 @@ footer {
 	.contactImgs {
 		margin: 10px;
 	}
+	footer {
+		width: 950px;
+	}
 }
 /*Medium screens*/
 @media screen and (max-width: 768px) {
-	body {
-		margin: 0;
-	}
 	#container {
 		width: 700px;
 	}
@@ -260,9 +260,6 @@ footer {
 }
 /*Small screens*/
 @media screen and (max-width: 640px) {
-	body {
-		margin: 0;
-	}
 	#container {
 		width: 550px;
 	}
