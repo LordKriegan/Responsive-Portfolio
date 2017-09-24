@@ -47,11 +47,11 @@ footer {
 	background-color: #666666;
 	text-align: center;
 	padding: 15px 0 15px 0;
-	width: 960px;
 	margin: 0 auto;
 	border-style: groove;
 	border-width: 3px;
 	border-color: #cccccc;
+	width: 960px;
 }
 
 #mainWrapper {
@@ -66,7 +66,6 @@ footer {
 	border-width: 3px;
 	border-color: #cccccc;
 	background-color: #ffffff;
-	width: 960px;
 }
 
 #name {
@@ -93,23 +92,28 @@ footer {
 
 #content {
 	float: left;
-	width: 650px;
 	background-color: #ffffff;
 	border-style: groove;
 	border-width: 3px;
 	border-color: #cccccc;
+	width: 650px;
 }
 
 #sidebar {
 	float: right;
-	width: 270px;
 	background-color: #ffffff;
 	border-style: groove;
 	border-width: 3px;
 	border-color: #cccccc;
 	text-align: center;
+	width: 270px;
 }
-
+#profilepic {
+	padding: 0 10px 0 0;
+	float: left;
+	width: 200px;
+	height: 300px;
+}
 /*makes portfolio links line up without having to use floats*/
 #pfFlexBox {
 	display: flex;
@@ -178,4 +182,115 @@ footer {
 .txtLink:hover {
 	background-color: #4aaaa5;
 	color: #ffffff;
+}
+/*Large screens*/
+@media screen and (max-width: 980px) {
+	body {
+		margin: 0;
+	}
+	#container {
+		margin: 0 auto;
+	}
+	#content {
+		margin-right: 10px;
+	}
+	#profilepic {
+		height: 300px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#pfFlexBox {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	#navbar {
+		width: 100%;
+	}
+	.pfLinks {
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-bottom: 10px;		
+	}
+	.contactImgs {
+		margin: 10px;
+	}
+}
+/*Medium screens*/
+@media screen and (max-width: 768px) {
+	body {
+		margin: 0;
+	}
+	#container {
+		width: 700px;
+	}
+	#profilepic {
+		padding: 0 10px 0 0;
+		float: left;
+		width: 200px;
+		height: 300px;
+	}
+	#content {
+		width: 95%;
+		margin: 0 auto;
+		float: none;
+	}
+	#sidebar {
+		margin: 20px auto 0 auto;
+		float: none;
+		width: 95%;
+	}
+	#navbar {
+		margin: 0 auto;
+		width: 100%;
+	}
+	#navbarlinks {
+		padding: 15px 40px 11px 0;
+	}
+	footer {
+		width: 700px;
+	}
+	#pfFlexBox {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.pfLinks {
+		margin: 10px 5px 10px 5px;		
+	}
+}
+/*Small screens*/
+@media screen and (max-width: 640px) {
+	body {
+		margin: 0;
+	}
+	#container {
+		width: 550px;
+	}
+	#name {
+		position: static;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	#navbarlinks {
+		float: none;
+		text-align: center;
+		padding: 10px 0 10px 0;
+	}
+	#profilepic {
+		float: none;
+		width: 100%;
+	}
+	#pfFlexBox {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.pfLinks {
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-bottom: 10px;		
+	}
+	footer {
+		width: 550px;
+	}
 }
