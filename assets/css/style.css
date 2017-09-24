@@ -1,0 +1,173 @@
+header {
+	background-color: #ffffff;
+	border-color: #cccccc;
+}
+
+/* using flexbox to make a sticky footer */
+body {
+	margin-top: 0;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	color: #777777;
+	background-image: url("../images/background.png");
+}
+
+html {
+	height: 100%;
+}
+
+h1 {
+	font-family: 'Roboto', 'Georgia', Times, Times New Roman, serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: 'Roboto', 'Georgia', Times, Times New Roman, serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #4aaaa5;
+}
+
+p {
+	font-family: 'Roboto', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a {
+	font-family: 'Roboto', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	text-decoration: none;
+}
+
+footer {
+	color: #ffffff;
+	background-color: #666666;
+	text-align: center;
+	padding: 15px 0 15px 0;
+	width: 960px;
+	margin: 0 auto;
+}
+
+#mainWrapper {
+  flex: 1 0 auto;
+  margin: 0 auto;
+}
+
+#navbar {
+	clear: both;
+	overflow: auto;
+	border-style: groove;
+	border-width: 3px;
+	border-color: #cccccc;
+	background-color: #ffffff;
+	width: 960px;
+}
+
+#name {
+	padding: 10px 0 10px 0;
+	width: 30%;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	float: left;
+}
+
+#navbarlinks {
+	float: right;
+	padding: 10px 80px 10px 0;
+	text-align: right;
+}
+
+#container {
+	padding-top: 50px;
+	clear: both;
+	overflow: auto;
+	width: 960px;
+}
+
+#content {
+	float: left;
+	width: 650px;
+	background-color: #ffffff;
+	border-style: groove;
+	border-width: 3px;
+	border-color: #cccccc;
+}
+
+#sidebar {
+	float: right;
+	width: 270px;
+	background-color: #ffffff;
+	border-style: groove;
+	border-width: 3px;
+	border-color: #cccccc;
+	text-align: center;
+}
+
+/*makes portfolio links line up without having to use floats*/
+#pfFlexBox {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.txtBox {
+	width: 100%;
+	font-style: italic;
+	color: #777777;
+}
+.pContent {
+	padding: 0 5px 20px 5px;
+	line-height: 2;
+}
+
+.contactImgs {
+	width: 60px;
+	height: 60px;
+}
+
+.contactImgs:hover {
+	outline: 3px groove #4aaaa5;
+	outline-offset: 1px;
+}
+/* https://stackoverflow.com/questions/9008559/css-put-h1-on-image*/
+.pfLinks {
+	margin: 10px 5px 10px 5px;
+	width: 280px;
+	height: 280px;
+	position: relative;
+}
+
+.pfLinksImage {
+	width: 100%;
+	height: 100%;
+}
+
+.pfLinksImage:hover {
+	outline: 5px groove #4aaaa5;
+}
+
+.pfLinksTitle {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+}
+
+.contentMain {
+	padding: 0 5% 0 5%;
+}
+
+.pgHeader {
+	color: #4aaaa5;
+}
+
+.txtLink:hover {
+	background-color: #4aaaa5;
+	color: #ffffff;
+}
