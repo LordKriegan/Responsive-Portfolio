@@ -195,8 +195,10 @@ footer {
 		margin-right: 10px;
 	}
 	#profilepic {
-		height: 300px;
-		width: 100%;
+		display: block;
+		float: none;
+		height: 200px;
+		width: 200px;
 		margin: 0 auto;
 	}
 
@@ -276,7 +278,8 @@ footer {
 	}
 	#profilepic {
 		float: none;
-		width: 100%;
+		width: 200px;
+		height: 200px;
 	}
 	#pfFlexBox {
 		flex-direction: column;
