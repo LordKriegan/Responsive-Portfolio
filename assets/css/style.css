@@ -190,9 +190,14 @@ footer {
 	}
 	#container {
 		margin: 0 auto;
+		width: 900px;
 	}
 	#content {
+		width: 60%;
 		margin-right: 10px;
+	}
+	#sidebar {
+		width: 30%;
 	}
 	#profilepic {
 		display: block;
